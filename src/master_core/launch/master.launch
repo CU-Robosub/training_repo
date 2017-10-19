@@ -1,0 +1,6 @@
+<launch>
+    <node name="number_generator" pkg="master_core" type="number_generator.py" output="screen" >
+    </node>
+    <node name="position_generator" pkg="master_core" type="position_generator.py" output="screen" >
+    </node>
+</launch>
