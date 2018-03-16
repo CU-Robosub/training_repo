@@ -1,0 +1,8 @@
+Symlinking /home/jeff/training_repo/devel/./_setup_util.py
+Symlinking /home/jeff/training_repo/devel/./env.sh
+Symlinking /home/jeff/training_repo/devel/./setup.sh
+Symlinking /home/jeff/training_repo/devel/./setup.zsh
+Symlinking /home/jeff/training_repo/devel/./setup.bash
+Symlinking /home/jeff/training_repo/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /home/jeff/training_repo/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
+Symlinking /home/jeff/training_repo/devel/lib/pkgconfig/catkin_tools_prebuild.pc
