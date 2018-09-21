@@ -14,10 +14,12 @@ def main():
     rospy.init_node('Number_Gen')
     m = Number_Gen()
     r = rospy.Rate(20)
-    while(1):
-        m.pub_random()
-        r.sleep()
-        # rospy.spinonce()
+    while not rospy.is_shutdown():
+        try:
+            m.pub_random()
+            r.sleep()
+        except rospy.ROSInterruptException:
+            pass
 
 if __name__ == "__main__":
     main()

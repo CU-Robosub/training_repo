@@ -8,12 +8,15 @@ from nav_msgs.msg import Odometry
 
 
 class Velocity():
-    #TODO Create Class
+    #TODO Create Class, subscribe to /positions, publish velocities in
+    # /velocities, using Odometry msg type
+
+
 ## Main Function
 def main():
     rospy.init_node('Velocity')
     m = Velocity()
-    rospy.spinonce()
+    rospy.spin()
 
 if __name__ == "__main__":
     main()

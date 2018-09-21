@@ -29,10 +29,12 @@ def main():
     rospy.init_node('Position_Gen')
     m = Position_Gen()
     r = rospy.Rate(10)
-    while(1):
-        m.pub_random()
-        r.sleep()
-        # rospy.spinonce()
+    while not rospy.is_shutdown():
+        try:
+            m.pub_random()
+            r.sleep()
+        except rospy.ROSInterruptException:
+            pass
 
 if __name__ == "__main__":
     main()
